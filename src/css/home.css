@@ -1,7 +1,7 @@
 .homeMainSection{
     min-height: 24rem;
     width: 100%;
-    background:  url(/src/img/background-home.jpg);
+    background:  url(src/img/background-home.jpg);
     background-position: bottom;
     background-size: cover;
     display: flex;
