@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+body{
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.mainHeader {
+  background: #232323;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  position: fixed;
+  padding: 0rem 2rem;
+  width: 100%;
+  top: 0rem;
+  left: 0rem;
+  z-index: 3;
+}
+
+.projectLogo {
+  background: #f869d5;
+  background: linear-gradient(to top right, #f869d5 10%, #635cff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+#menuBtn {
+  display: none;
+}
+
+.mainMenu {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+
+.mainMenu li {
+  margin: 0rem 1rem;
+}
+
+.mainMenu li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.menuResp {
+  display: none;
+}
+
+.mainFooter{
+  min-height: 6rem;
+  width: 100vw;
+  display: flex;
+  background: #232323;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerTxt{
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  line-height: 3rem;
+  font-size: 1.4rem;
+
+}
+
+@media screen and (max-width: 600px) {
+  .mainHeader {
+    height: 4rem;
+    padding: 0rem 2rem;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .projectLogo {
+    font-size: 2rem;
+  }
+
+  .mainMenu {
+    flex-flow: column;
+    position: fixed;
+    align-items: center;
+    top: 4rem;
+    left: 0rem;
+    background: #2f2f2f;
+    width: 100vw;
+    padding: 1rem 0rem;
+    display: none;
+  }
+
+  .mainMenu li {
+    margin: 1rem 0rem;
+  }
+
+  .mainMenu li a {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  #menuBtn {
+    height: 2.2rem;
+    display: block;
+  }
+
+  .displayYes {
+    display: flex;
+  }
+}
