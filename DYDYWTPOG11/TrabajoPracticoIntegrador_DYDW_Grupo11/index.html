@@ -24,10 +24,15 @@
     ></script>
     <title>Home</title>
   </head>
+
   <body id="dom">
     <header class="mainHeader">
       <h1 class="projectLogo">ECOTECH</h1>
-      <img id="menuBtn" src="./src/icons/menuIcon.svg" alt="menuBtn" />
+      <img
+        id="menuBtn"
+        src="./src/icons/menuIcon.svg"
+        alt="menuBtn"
+      />
       <ul class="mainMenu">
         <li><a href="./index.html" id="selected">Inicio</a></li>
         <li><a href="./integrantes.html">Integrantes</a></li>
@@ -35,17 +40,28 @@
         <li><a href="./juegos.html">Juegos</a></li>
       </ul>
     </header>
+
     <div class="homeMainSection">
-      <h1 class="homeMainSection-txt">
-        "Transformando el futuro con energía renovable"
-      </h1>
-      <div class="botonera-homeMainSection">
-        <a href="/avances.html" class="mostrarAvances">Avances</a>
-        <a href="/integrantes.html" class="mostrarIntegrantes">Integrantes</a>
-      </div>
+          <h1 class="homeMainSection-txt">
+            "Transformando el futuro con energía renovable"
+          </h1>
+          <p class="homeMainSection-p">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, eius
+            libero molestiae possimus, reiciendis assumenda modi provident atque
+            ipsa corporis nihil sint voluptas, molestias minima ut delectus
+            adipisci? Atque, enim.
+          </p>
+          <div class="botonera-homeMainSection">
+            <a href="./avances.html" class="mostrarAvances">Avances</a>
+            <a href="./integrantes.html" class="mostrarIntegrantes"
+              >Integrantes</a
+            >
+          </div>
+          <a href="#infoImport" class="InformacionImportante">Informacion Importante</a>
     </div>
+
     <main class="mainSection">
-      <div class="infoContainer">
+      <div class="infoContainer" id="infoImport">
         <p class="infoContainerTitle">Informacion importante</p>
         <div class="infoTarjertasContainer">
           <div class="infoTarjeta">
@@ -70,20 +86,17 @@
         </div>
       </div>
     </main>
+
     <footer class="mainFooter">
       <div class="footerTxt">
         <p>Sitio desarrollado para uso educativo</p>
-      </div>
-      <div class="footerTxt">
         <p>Diseño y desarrollo Web</p>
-      </div>
-      <div class="footerTxt">
         <p>UADE</p>
-      </div>
-      <div class="footerTxt">
         <p>2024</p>
+        <a href="#" class="toTop">Ir al Inicio</a>
       </div>
     </footer>
+
     <script src="./src/js/index.js"></script>
   </body>
 </html>

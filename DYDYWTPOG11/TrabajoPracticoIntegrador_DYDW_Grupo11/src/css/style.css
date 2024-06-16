@@ -1,3 +1,5 @@
+/* GENERAL STYLE aplica para todo elemento */
+
 * {
   padding: 0;
   margin: 0;
@@ -7,46 +9,44 @@
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "slnt" 0;
+  text-decoration: none;
 }
 
-.homeMainSection{
-  min-height: 24rem;
-  width: 100%;
-  background:  url(/src/img/background-home.jpg);
-  background-position: bottom;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  margin-top:4rem ;
-}
+/* Estilo body general */
 
 body{
-  max-width: 100vw;
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  flex-wrap: nowrap;
   overflow-x: hidden;
+  background: #333333;
 }
 
-.mainHeader {
-  background: #232323;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+/* Estilo  Header + Nav */
+
+ .mainHeader {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   height: 4rem;
-  position: fixed;
-  padding: 0rem 2rem;
   width: 100%;
-  top: 0rem;
-  left: 0rem;
-  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #232323;
+  padding: 0rem 2rem;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+
+}
+
+@media screen and (min-width: 2000px) {
+    .mainHeader, .homeMainSection, .mainSection, .mainFooter{
+      padding: 0 calc(100vw - 2000px);
+    }
 }
 
 .projectLogo {
@@ -55,6 +55,7 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  font-size: 2.6rem;
 }
 
 #menuBtn {
@@ -82,170 +83,93 @@ body{
   font-size: 1.4rem;
 }
 
-.menuResp {
-  display: none;
-}
 
 #selected{
   background: #f869d5;
   background: linear-gradient(to top right, #f869d5 10%, #635cff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: bolder;
 }
 
-.mainSection{
-  margin: 2rem;
-
-}
-
-.contenedorCaja{
+.mainFooter, .footerTxt {
   display: flex;
-}
-
-.caja{
-  display: flex;
-  margin: 4rem;
-  border: 1px solid red;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 4rem;
+  background: #ffffff;
+  width: 100%;
+  padding: 0rem 2rem;
 }
 
 .mainFooter{
-  min-height: 6rem;
-  width: 100vw;
-  display: flex;
-  flex-flow: row wrap;
-  background: #232323;
-  align-items: center;
-  justify-content: center;
+  border-top: 1px solid #33333339;
 }
 
-.footerTxt{
-  color: #ffffff;
+.footerTxt p{
+  color: #232323;
   text-align: center;
-  padding: 1rem;
-  line-height: 3rem;
-  font-size: 1.4rem;
-  border: 1px solid blue;
-}
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
 
-.infoContainer{
-  display: flex;
-  justify-content: center;
 }
-
-.infoContainerTitle{
+.toTop{
   background: #f869d5;
   background: linear-gradient(to top right, #f869d5 10%, #635cff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.4rem;
-  text-align: center;
-}
-
-
-/* css juegos*/
-
-.juegos{
-  margin-top: 4rem;
-  background: #ffffff;
-  width: 100%;
-  min-height: calc(100vh - 4rem) ;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.juego01{
-  background: #5d12d4;
-  padding: 2rem;
+  font-size: 1.2rem;
+  border: 2px solid #f869d5;
+  padding: .5rem 1rem;
   border-radius: 8px;
-  text-decoration: none;
 }
 
-.juego01:hover{
-  transform: scale(1.2);
-  transition: 250ms;
+.toTop:hover{
+  box-shadow: 1px 1px 14px #f869d5;
+  transform: scale(1.1);
+  transition: 300ms;
 
 }
 
-.juego01 h1{
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.juego01 p{
-  text-align: center;
-  line-height: 2rem;
-  color: #ffffff;
-}
-
-canvas {
-  display: block;
-  background-color: #f0f0f0;
-  margin: auto;
-}
-#gameOverScreen {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
+.displayYes{
+  display: flex !important;
 }
 
 
+/* MOBILE CSS STYLE */
 
-/*mobile*/
-
-@media screen and (max-width: 600px) {
-  .mainHeader {
-    height: 4rem;
-    padding: 0rem 2rem;
-    position: fixed;
-    top: 0rem;
-    left: 0rem;
-    width: 100%;
-    z-index: 2;
-  }
-
-  .projectLogo {
-    font-size: 2rem;
-  }
-
-  .mainMenu {
-    flex-flow: column;
-    position: fixed;
-    align-items: center;
-    top: 4rem;
-    left: 0rem;
-    background: #2f2f2f;
-    width: 100vw;
-    padding: 1rem 0rem;
-    display: none;
-  }
-
-  .mainMenu li {
-    margin: 1rem 0rem;
-  }
-
-  .mainMenu li a {
-    font-size: 1.4rem;
-    color: #ffffff;
-    font-weight: bold;
-  }
-
+@media screen and (max-width: 1000px) {
   #menuBtn {
-    height: 2.2rem;
     display: block;
+    height: 3rem;
   }
 
-  .displayYes {
-    display: flex;
+  .mainMenu{
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;  
+    top: 4rem;
+    left: 0%;
+    width: 100vw;
+    background: #333333ed;
+    z-index: 3;
+    display: none;
+
   }
+
+  .mainMenu li{
+    margin: 1.5rem 0rem;
+
+  }
+
+  .mainMenu li a{
+    padding: 1rem;
+  }
+
+  .mainFooter{
+    padding: 2rem 0rem;
+  }
+
 }
-
-
