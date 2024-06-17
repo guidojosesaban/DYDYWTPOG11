@@ -70,13 +70,13 @@
 /* Estilo body general */
 
 .homeMainSection{
-  height: calc(100vh - 4rem);
+  height: calc(100vh - 3em);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(/TrabajoPracticoIntegrador_DYDW_Grupo11/src/img/background-home.jpg);
+  background-image: url(/src/img/background-home.jpg);
   background-size: cover;
   background-position: bottom;
   margin-top: 4rem;
@@ -96,6 +96,7 @@
   text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.352);
   margin-bottom: 2rem;
   color: #ffffff;
+  padding: 0rem .5rem;
 }
 
 .homeMainSection-p{
@@ -156,13 +157,12 @@
 }
 
 
-
 .banner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(/TrabajoPracticoIntegrador_DYDW_Grupo11/src/img/background-home.jpg);
+  background-image: url(/src/img/background-home.jpg);
   background-size: cover;
   background-position: bottom;
   height: calc(50vh - 4rem);
@@ -197,6 +197,7 @@
 .integBoxContent{
   background-color: #F3F3F3;
   border-radius: 20px;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,6 +206,7 @@
 
 .contenedorCaja{
   width: 100%;
+  padding: 1rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -214,12 +216,12 @@
 .caja{
   display: flex;
   flex-flow: row wrap;
-  align-items: start;
+  align-items: center;
   justify-content: start;
   background: #ffffff;
-  width: 20rem;
-  height: 10rem;
-  margin: 0rem 1rem;
+  width: 30rem;
+  height: 15rem;
+  margin: 1rem;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
@@ -237,26 +239,31 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .cvBnt{
   background: #645cff;
   padding: .5rem 1.5rem;
+  margin-top: 1rem;
   border-radius: 8px;
   color: #ffffff;
   box-shadow: 1px 1px 4px #635cff;
 }
 
 .integImg{
-  height: 10rem;
+  height: 15rem;
   border-radius: 8px 0px 0px 8px ;
 }
 
 
 /* Avances */
 .mainAvances{
-  padding: 5%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
 }
 
 .avances{
@@ -266,25 +273,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem 4rem;
+  text-align: justify;
 }
 
 .datos{
   background-color: #F3F3F3;
   border-radius: 20px;
-  margin-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 
 .detalles{
   border-radius: 20px;
-  margin-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 
 .detalles h1{
@@ -292,6 +302,33 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.6rem;
+  padding: 1rem 0rem;
+}
+
+.sititosRefList li a, .detalles p{
+  width: 60rem;
+  text-align: justify;
+}
+
+#detallesLogo{
+  width: 20rem;
+}
+
+.imagenes{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 2rem 0rem;
+}
+
+.energiasImg{
+  width: 24rem; 
+  height: 24rem; 
+  background-size: cover; 
+  background-position: center;
+  border-radius: 8px;
+  margin: 1rem;
 }
 
 .caja-colores{
@@ -327,13 +364,6 @@
   background-color: #B89BFF;
 }
 
-.imagenes{
-  margin-top: 10%;  
-  display: flex;
-  justify-content: space-around;
-  
-}
-
 
 .detalles img{
   border-radius: 20px;
@@ -348,10 +378,10 @@
 
 /* Todos*/
 .mainSection{
-  padding: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: calc(100vh - 6rem);
   z-index: 0;
 }
 
@@ -369,15 +399,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2.6rem;
-  margin-bottom: 4rem;
+  padding: 1rem 0rem;
 }
 
 .infoTarjertasContainer{
   display: flex;
   flex-flow: row wrap;
   align-items:center;
-  justify-content: space-evenly;
-  width: 100%;
+  justify-content: center;
 }
 
 .infoTarjeta{
@@ -389,6 +418,7 @@
   align-items: center;
   justify-content: space-evenly;
   border-radius: 8px;
+  margin: 1rem;
 }
 
 .infoTarjeta:hover{
@@ -405,6 +435,10 @@
 
 .infoImg{
   width: 10rem;
+}
+
+.presentacion h2{
+  padding: 1rem 0rem;
 }
 
 
@@ -473,7 +507,7 @@
     align-items: center;
     justify-content: space-evenly;
     position: absolute;  
-    top: 4rem;
+    top: 5rem;
     left: 0%;
     width: 100vw;
     background: #333333ed;
@@ -498,7 +532,7 @@
 }
 
 @media screen and (min-width: 2000px) {
-  .mainHeader, .homeMainSection, .mainSection, .mainFooter{
+  .mainHeader, .homeMainSection, .mainSection, .mainAvances, .mainFooter{
     padding: 0 calc(100vw - 2000px);
   }
 }
@@ -515,16 +549,41 @@
   }
 
   .infoContainer{
-      height: 100vh;
+      min-height: auto;
   }
 
   .infoContainerTitle{
       text-align: center;
       font-size: 2rem;
+      padding: 1rem 0rem;
   }
 
   .infoTarjeta{
       margin-bottom: 1.5rem;
+  }
+
+  .presentacion{
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .avances{
+    padding: 0%;
+    width: 96vw;
+    justify-content: space-evenly;
+  }
+
+  .sititosRefList li a{
+    max-width: 10rem;
+    color: #232323;
+  }
+  .detalles, .detalles p{
+    max-width: 90vw;
+    padding: 0%;
+  }
+
+  .detalles h1{
+    font-size: 1.8rem;
   }
 
 }
@@ -534,9 +593,13 @@
 @media screen and (max-width: 1000px) {
     
   .mainSection{
-      height: calc(100vh - 4rem);
+      min-height: calc(100vh - 4rem);
   }
 
+  .integBoxContent{
+    background: #ffffff;
+    padding-top: 2rem;
+  }
   .integBox{
       width: 90vw;
       height: auto;
@@ -549,6 +612,31 @@
   .contenedorCaja{
       flex-direction: column;
       justify-content: space-evenly;
-      height: 44rem;
+      min-height: 44rem;
+      padding: 1rem 0rem;
+  }
+
+  .caja{
+    flex-flow: column;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin: 1rem 0rem;
+  }
+
+  .integImg{
+    border-radius: 8px 8px 0px 0px;
+    width: 80vw;
+    height: auto;
+
+  }
+
+  .text-btn{
+    width: 100%;
+  }
+
+  .cvBnt{
+    margin-top: 1rem;
   }
 }
