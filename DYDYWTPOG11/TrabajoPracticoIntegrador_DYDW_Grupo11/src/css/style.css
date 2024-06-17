@@ -489,6 +489,36 @@
 }
 
 
+.juegosMainSection{
+  min-height: calc(100vh - 9rem);
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.juegos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.juegoCard{
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 14rem;
+  width: 20rem;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.juegoCard p{
+  text-align: center;
+}
 
 
 /* MOBILE CSS STYLE */
