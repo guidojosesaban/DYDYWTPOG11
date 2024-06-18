@@ -1,0 +1,199 @@
+.mainAvances{
+    margin-top: 5rem;
+    max-width: 100vw;
+    min-height: calc(100vh - 5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 0rem;
+}
+
+.avancesPropuesta{
+    background: rgb(248, 248, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.infoContainerTitle{
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    text-align: center;
+}
+
+.avancesPropuesta h2{
+    text-align: justify;
+}
+
+.imagenes{
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 2rem 0rem;
+
+}
+
+.energiasImg{
+    height: 20rem;
+    width: 20rem;
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.3);
+    margin: 1rem ;
+    border-radius: 8px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.detallesSitioRef{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: rgb(248, 248, 248);
+    width: 90vw;
+    border-radius: 8px;
+    padding: 1rem 0rem;
+}
+
+.detallesSitioRef h1{
+    padding: 1rem 0rem;
+}
+
+.sititosRefList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90vw;
+    height: auto;
+}
+
+
+.sititosRefList li{
+    padding: 1rem 0rem;
+}
+
+.sititosRefList li a {
+    font-size: 1.4rem;
+    color: #232323;
+}
+
+
+.detallesPublicObj{
+    max-width: 90vw;
+    background: rgb(248, 248, 248);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 2rem 0rem;
+}
+
+.detallesPublicObj h1{
+    font-size: 2rem;
+    padding: 1rem 0rem;
+}
+
+.detallesPublicObj p{
+    text-align: justify;
+}
+
+.detallesLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background: rgb(248, 248, 248);
+    width: 90vw;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.detallesLogo h1{
+    padding: 1rem 0rem;
+}
+
+#detallesLogo{
+    width: 16rem;
+    border-radius: 8px;
+}
+
+.detallesPaletaColores{
+    width: 90vw;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 2rem;
+}
+
+.colorsContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90vw;
+
+}
+
+.clase-colores{
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+#color1{
+    background: #02391E;
+}
+
+#color2{
+    background: #99E631;
+}
+
+#color3{
+    background: #B89BFF;
+}
+
+.detallesImgTransmitir{
+    margin-bottom: 2rem;
+}
+
+.detallesImgTransmitir, .detallesExpect{
+    width: 90vw;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background: rgb(248, 248, 248);
+    border-radius: 8px;
+
+}
+
+.detallesImgTransmitir h1, .detallesExpect h1{
+    font-size: 2rem;
+    padding: 1rem 0rem;
+}
+
+.detallesImgTransmitir p, .detallesExpect p{
+    text-align: justify;
+}
