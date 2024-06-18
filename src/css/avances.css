@@ -177,10 +177,6 @@
     margin-bottom: 2rem;
 }
 
-.detallesExpect{
-        margin-bottom: 2rem;
-{
-    
 .detallesImgTransmitir, .detallesExpect{
     width: 90vw;
     padding: 2rem;
@@ -200,4 +196,8 @@
 
 .detallesImgTransmitir p, .detallesExpect p{
     text-align: justify;
+}
+
+.detallesExpect{
+    margin-bottom: 2rem;
 }
