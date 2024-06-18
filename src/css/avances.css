@@ -177,6 +177,10 @@
     margin-bottom: 2rem;
 }
 
+.detallesExpect{
+        margin-bottom: 2rem;
+{
+    
 .detallesImgTransmitir, .detallesExpect{
     width: 90vw;
     padding: 2rem;
@@ -186,7 +190,6 @@
     justify-content: start;
     background: rgb(248, 248, 248);
     border-radius: 8px;
-    margin-bottom: 2rem;
 
 }
 
