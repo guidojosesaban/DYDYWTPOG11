@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: center;
     width: 30rem;
-    min-height: 24rem;
+    min-height: 22rem;
     background: #ffffff;
     margin: 1rem;
     border-radius: 8px;
@@ -41,6 +41,6 @@
     color: #232323;
     font-size: 1rem;
     text-align: justify;
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
     padding-bottom: 1rem;
 }
